@@ -7,16 +7,19 @@ public class Roletaviciada : MonoBehaviour
 {
     int[,] table = new int[5, 5]; //Criando um array 5x5 do tipo int
     string[,] tablestring = new string[5, 5]; //Criando um array 5x5 do tipo string
-    
+
+
     //Variaveis para colocar o texto do canvas no inspector
     public Text txt;
     public Text txt2;
+
 
     private void Start()
     {
         GerarNumeros(); //Chamando as Funções
         GerarNumerosUnicos();
     }
+
 
     //Gerando Números Apenas
     public void GerarNumeros()
@@ -36,6 +39,8 @@ public class Roletaviciada : MonoBehaviour
         }
         txt.text = arrayString; //Exibindo Numero na UI
     }
+
+
 
     //Gerando Números Únicos
 
